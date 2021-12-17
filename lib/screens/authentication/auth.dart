@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(10.0)),
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5, sigmaY: 10),
                 child: Container(
@@ -77,20 +77,38 @@ class _LoginPageState extends State<LoginPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(
-                        "Welcome to\nProjectFolio.".toUpperCase(),
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 40,
-                          fontWeight: FontWeight.bold,
-                          shadows: kElevationToShadow[8],
-                        ),
+                      Row(
+                        children: [
+                          Flexible(
+                            flex: 1,
+                            child: Image.asset(
+                              'assets/logo.png',
+                              height: 80,
+                              width: 80,
+                            ),
+                          ),
+                          Expanded(
+                            flex: 2,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                "ProjectFolio".toUpperCase(),
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold,
+                                  shadows: kElevationToShadow[8],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 10),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
                         child: Text(
-                          "Make, Share & Grow. A Showcase for your open-source projects.",
+                          "Make, Share & Grow. \nA Showcase for your projects.",
                           style: TextStyle(
                               color: Colors.white.withOpacity(.8),
                               fontSize: 18,
