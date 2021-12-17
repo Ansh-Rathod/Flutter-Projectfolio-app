@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                       Padding(
                         padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
                         child: Text(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+                          "Make, Share & Grow. A Showcase for your open-source projects.",
                           style: TextStyle(
                               color: Colors.white.withOpacity(.8),
                               fontSize: 18,
