@@ -304,6 +304,9 @@ class ProjectInfo extends StatelessWidget {
                                               buildLikeIcon(
                                                 Row(
                                                   children: [
+                                                    const SizedBox(
+                                                      width: 10,
+                                                    ),
                                                     Text(
                                                       "${state.likeCount}",
                                                       style: Theme.of(context)
@@ -441,18 +444,14 @@ class ProjectInfo extends StatelessWidget {
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        DelayedDisplay(
-                                          delay:
-                                              const Duration(milliseconds: 600),
-                                          child: Text(
-                                            data.description!,
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .bodyText1!
-                                                .copyWith(
-                                                    color: Colors.white
-                                                        .withOpacity(.6)),
-                                          ),
+                                        Text(
+                                          data.description!,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodyText1!
+                                              .copyWith(
+                                                  color: Colors.white
+                                                      .withOpacity(.6)),
                                         ),
                                         const SizedBox(
                                           height: 10,

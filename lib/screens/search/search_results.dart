@@ -118,21 +118,18 @@ class SearchResults extends StatelessWidget {
                     ),
                   ));
                 }
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: ListView.separated(
-                    separatorBuilder: (context, index) => Divider(
-                      height: .5,
-                      color: Colors.grey.shade800,
-                    ),
-                    itemCount: state.projects.length,
-                    itemBuilder: (context, index) {
-                      return ProjectWidget(
-                        currentUser: currentUser,
-                        project: state.projects[index],
-                      );
-                    },
+                return ListView.separated(
+                  separatorBuilder: (context, index) => Divider(
+                    height: .5,
+                    color: Colors.grey.shade800,
                   ),
+                  itemCount: state.projects.length,
+                  itemBuilder: (context, index) {
+                    return ProjectWidget(
+                      currentUser: currentUser,
+                      project: state.projects[index],
+                    );
+                  },
                 );
               }
             }
