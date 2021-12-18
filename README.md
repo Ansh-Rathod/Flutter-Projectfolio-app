@@ -35,12 +35,12 @@ share your open source projects and get better reach and find other developers.
   - copy URL.
   - open Project images in the browser.
   - user can delete their own Project.
-- create project.
-  - user can add multiple images (upto 5 images).
+- create a project.
+  - user can add multiple images (up to 5 images).
   - upload from the gallery.
-  - Users can describe their project with in 500 words.
-  - User can add Multipal hashtag to their project.
-  - github url and title of the project must be added.
+  - Users can describe their project within 500 words.
+  - Users can add Multiple hashtags to their project.
+  - GitHub URL and title of the project must be added.
 
 <br/>
 
