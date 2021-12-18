@@ -68,7 +68,7 @@ class _CommentScreenState extends State<CommentScreen> {
                                       size: 90),
                                   const SizedBox(height: 10),
                                   Text(
-                                    "Be frist in Comments".toUpperCase(),
+                                    "Be first in comments".toUpperCase(),
                                     textAlign: TextAlign.center,
                                     style: Theme.of(context)
                                         .textTheme
@@ -146,7 +146,8 @@ class _CommentScreenState extends State<CommentScreen> {
                           onTap: () {
                             BlocProvider.of<AddCommentsCubit>(context)
                                 .addComment(
-                              userId: widget.tableId,
+                              userId: widget.userId,
+                              tableId: widget.tableId,
                               postId: widget.projectId,
                               comment: con.text,
                               currentUser: widget.currentUser,

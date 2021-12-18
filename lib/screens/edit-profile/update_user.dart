@@ -194,7 +194,7 @@ class _UpdateUserState extends State<UpdateUser> {
                             child: Text(
                               state.status != UserStatus.loading
                                   ? "UPDATE DETAILS".toUpperCase()
-                                  : "UPDATEING..".toUpperCase(),
+                                  : "updating..".toUpperCase(),
                               style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,

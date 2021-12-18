@@ -19,6 +19,7 @@ class AddCommentsCubit extends Cubit<AddCommentsState> {
     required UserModel currentUser,
     required String userId,
     required String postId,
+    required String tableId,
     required String comment,
   }) async {
     state.comments.add(CommentModel(
@@ -33,8 +34,8 @@ class AddCommentsCubit extends Cubit<AddCommentsState> {
     ));
     emit(state.copyWith(status: LoadingComments.loaded));
     await repo.addComment(
-      tableId: userId,
-      uid: currentUser.id!,
+      tableId: tableId,
+      uid: userId,
       postId: postId,
       comment: comment,
       commenterUserId: currentUser.id!,

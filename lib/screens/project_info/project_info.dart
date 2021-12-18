@@ -464,7 +464,10 @@ class ProjectInfo extends StatelessWidget {
                                             "Type ",
                                             style: Theme.of(context)
                                                 .textTheme
-                                                .headline1,
+                                                .headline1!
+                                                .copyWith(
+                                                  fontSize: 18,
+                                                ),
                                           ),
                                         ),
                                         const SizedBox(
@@ -486,33 +489,38 @@ class ProjectInfo extends StatelessWidget {
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        DelayedDisplay(
-                                          delay:
-                                              const Duration(milliseconds: 600),
-                                          child: Text(
-                                            "Category ",
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .headline1,
+                                        if (data.tags!.isNotEmpty)
+                                          DelayedDisplay(
+                                            delay: const Duration(
+                                                milliseconds: 600),
+                                            child: Text(
+                                              "Category ",
+                                              style: Theme.of(context)
+                                                  .textTheme
+                                                  .headline1!
+                                                  .copyWith(
+                                                    fontSize: 18,
+                                                  ),
+                                            ),
                                           ),
-                                        ),
                                         const SizedBox(
                                           height: 10,
                                         ),
                                       ],
                                     ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 20.0),
-                                    child: DelayedDisplay(
-                                        delay:
-                                            const Duration(milliseconds: 600),
-                                        child: Tags(
-                                          tags: data.tags!,
-                                          currentUser: currentUser,
-                                        )),
-                                  ),
+                                  if (data.tags!.isNotEmpty)
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0),
+                                      child: DelayedDisplay(
+                                          delay:
+                                              const Duration(milliseconds: 600),
+                                          child: Tags(
+                                            tags: data.tags!,
+                                            currentUser: currentUser,
+                                          )),
+                                    ),
                                   const SizedBox(
                                     height: 40,
                                   )
