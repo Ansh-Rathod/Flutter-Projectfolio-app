@@ -1,0 +1,38 @@
+{
+	"name": "projectfolio",
+	"version": "1.0.0",
+	"description": "Backend for projectfolio app.",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index",
+		"dev": "nodemon index"
+	},
+	"keywords": [
+		"open",
+		"source",
+		"projects",
+		"github",
+		"Postgres",
+		"SQl",
+		"nodejs"
+	],
+	"type": "module",
+	"author": "Ansh Rathod",
+	"license": "ISC",
+	"engines": {
+		"node": "17.0.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"cloudinary": "^1.27.1",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"formidable": "^2.0.1",
+		"multer": "^1.4.4",
+		"multer-storage-cloudinary": "^4.0.0",
+		"pg": "^8.7.1",
+		"uuid": "^8.3.2"
+	}
+}
