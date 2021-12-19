@@ -66,7 +66,7 @@ share your open source projects and get better reach and find other developers.
 <p align="center">
 <img src="screenshots/Screenshot_20211218-120842.jpg" alt="Gallery Image" width="30%" />
 <img src="screenshots/Screenshot_20211218-120939.jpg" alt="Gallery Image" width="30%" />
-<img src="screenshots\Screenshot_20211218-120948.jpg" alt="Gallery Image" width="30%" />
+<img src="screenshots/Screenshot_20211218-120948.jpg" alt="Gallery Image" width="30%" />
 </p>
 <hr/>
 
