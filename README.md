@@ -9,6 +9,9 @@ share your open source projects and get better reach and find other developers.
 <img src="assets/logo.png" alt="logo" width="30%"/>
 
 <h3 align="center"><a href="https://github.com/Ansh-Rathod/Flutter-Projectfolio-app/releases/download/v1.0.0/app-armeabi-v7a-release.apk">Download the release APK</a></h3>
+
+<br/>
+<h4>NOTE: You need your github <b>"User"</b> account to login/sign up into app. </h4>
 </p>
 
 ## **Features**
